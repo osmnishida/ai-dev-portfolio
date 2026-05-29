@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>AI Dev Portfolio — Nishida</title>
+  <meta name="description" content="Claude Code・Manus などのAIツールを活用し、アイデアをプロダクトへ変換する開発者のポートフォリオ。" />
+
+  <!-- OGP -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="AI Dev Portfolio — Nishida" />
+  <meta property="og:description" content="AIツールを武器に、アイデアを素早くプロダクト化する開発者のポートフォリオ。" />
+  <meta property="og:image"       content="image/project-openclaw.png" />
+  <meta property="twitter:card"   content="summary_large_image" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Noto+Serif+JP:wght@300;400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Nav ===== -->
+  <nav role="navigation" aria-label="メインナビゲーション">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Portfolio</a>
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <section id="hero" aria-label="ヒーロー">
+    <div class="container">
+      <span class="hero-eyebrow reveal">AI Developer</span>
+      <h1 class="hero-title reveal" style="transition-delay:.08s">
+        AIで、アイデアを<br /><span class="en">into Products.</span>
+      </h1>
+      <p class="hero-desc reveal" style="transition-delay:.16s">
+        Claude Code / Manus などのAIツールを活用し、<br />
+        アイデアを素早く動くプロダクトへ変換します。
+      </p>
+      <a href="#projects" class="hero-cta reveal" style="transition-delay:.24s">作品を見る</a>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section id="projects" aria-label="制作物">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Projects</p>
+        <h2 class="section-title">制作物</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Tetris — orange × yellow -->
+        <article class="project-card reveal" data-season="tetris" style="transition-delay:.05s">
+          <div class="project-thumb-wrap">
+            <img
+              class="project-thumb"
+              src="image/project-tetris.png"
+              alt="Tetris Neon Edition のスクリーンショット。ネオンカラーのブロックとスコア表示が見える。"
+              width="600" height="375"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-body">
+            <div class="project-tags" aria-label="使用技術">
+              <span class="tag">React</span>
+              <span class="tag">Canvas</span>
+              <span class="tag">Game</span>
+            </div>
+            <h3 class="project-name">Tetris — Neon Minimalism Edition</h3>
+            <p class="project-desc">
+              React と Canvas API で制作したテトリスゲーム。
+              ネオンミニマリズムデザインでスコア・レベル管理を実装。
+            </p>
+          </div>
+        </article>
+
+        <!-- OpenClaw — navy × slate -->
+        <article class="project-card reveal" data-season="openclaw" style="transition-delay:.12s">
+          <div class="project-thumb-wrap">
+            <img
+              class="project-thumb"
+              src="image/project-openclaw.png"
+              alt="OpenClaw の説明サイトのスクリーンショット。自律型AIエージェントの概要ページ。"
+              width="600" height="375"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-body">
+            <div class="project-tags" aria-label="使用技術">
+              <span class="tag">Manus</span>
+              <span class="tag">AI Agent</span>
+              <span class="tag">Web</span>
+            </div>
+            <h3 class="project-name">OpenClaw — 自律型AIエージェント資料</h3>
+            <p class="project-desc">
+              Manus を使って制作した自律型AIエージェントの総合説明サイト。
+              チャットから指示するだけでAIが代わりに動く仕組みを紹介。
+            </p>
+          </div>
+        </article>
+
+        <!-- Flowtime — forest × gold -->
+        <article class="project-card mobile reveal" data-season="flowtime" style="transition-delay:.19s">
+          <div class="project-thumb-wrap">
+            <img
+              class="project-thumb"
+              src="image/project-flowtime.png"
+              alt="Flowtime Nature アプリのモバイル画面。タイマーと自然音の再生コントロールが表示されている。"
+              width="390" height="693"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-body">
+            <div class="project-tags" aria-label="使用技術">
+              <span class="tag">Mobile App</span>
+              <span class="tag">Productivity</span>
+            </div>
+            <h3 class="project-name">Flowtime Nature — 集中タイマー</h3>
+            <p class="project-desc">
+              集中の波に合わせて休憩を提案するタイマーアプリ。
+              自然音再生機能付きで、作業時間の20%を自動で休憩時間に割り当て。
+            </p>
+          </div>
+        </article>
+
+        <!-- Market Connect — coral × beige -->
+        <article class="project-card reveal" data-season="market" style="transition-delay:.26s">
+          <div class="project-thumb-wrap">
+            <img
+              class="project-thumb"
+              src="image/project-market.png"
+              alt="マーケット・コネクトのランディングページ。次世代マーケットプレイスのヒーローセクション。"
+              width="600" height="375"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-body">
+            <div class="project-tags" aria-label="使用技術">
+              <span class="tag">LP</span>
+              <span class="tag">AI</span>
+              <span class="tag">Marketplace</span>
+            </div>
+            <h3 class="project-name">マーケット・コネクト — AIマーケットプレイス</h3>
+            <p class="project-desc">
+              高度なデータ分析とAI技術を活用した次世代マーケットプレイスのLP。
+              サプライヤーとバイヤーをつなぐプラットフォームを紹介。
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about" aria-label="プロフィール">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">About</p>
+        <h2 class="section-title">について</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal" style="transition-delay:.08s">
+          <p>
+            <strong>AIツールを武器に、アイデアを素早くプロダクト化する</strong>開発者です。
+          </p>
+          <p>
+            Claude Code・Manus などの最新AIエージェントを活用し、
+            ゲーム・Webアプリ・モバイルアプリまで幅広く制作。
+            企画から実装・デプロイまでを一貫して担います。
+          </p>
+          <p>
+            「作りたい」を最速で「動くもの」に変えることをモットーにしています。
+          </p>
+        </div>
+
+        <div class="skills-block reveal" style="transition-delay:.16s">
+          <div class="skills-group">
+            <p class="skills-group-label">AI Tools</p>
+            <ul class="skills-list">
+              <li>Claude Code</li>
+              <li>Manus</li>
+              <li>ChatGPT</li>
+              <li>Cursor</li>
+            </ul>
+          </div>
+          <div class="skills-group">
+            <p class="skills-group-label">Development</p>
+            <ul class="skills-list">
+              <li>React</li>
+              <li>HTML / CSS</li>
+              <li>JavaScript</li>
+              <li>Canvas API</li>
+              <li>GitHub Pages</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" aria-label="お問い合わせ">
+    <div class="container">
+      <h2 class="contact-headline reveal">Get in touch.</h2>
+      <p class="contact-desc reveal" style="transition-delay:.08s">
+        仕事の依頼・コラボレーション・質問など、お気軽にどうぞ。
+      </p>
+      <nav class="contact-links reveal" style="transition-delay:.16s" aria-label="外部リンク">
+        <a href="https://github.com/osmnishida" class="contact-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://twitter.com/" class="contact-link" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+        <a href="mailto:inventivebox@gmail.com" class="contact-link">Email</a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Nishida. Built with Claude Code.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Reveal -->
+  <script>
+    (function () {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+
+</body>
+</html>
