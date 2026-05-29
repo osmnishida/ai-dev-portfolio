@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>AI Dev Portfolio — Nishida</title>
-  <meta name="description" content="Claude Code・Manus などのAIツールを活用し、アイデアをプロダクトへ変換する開発者のポートフォリオ。" />
+  <title>AI Dev Archive — Nishida</title>
+  <meta name="description" content="Claude Code・Manus などのAIツールを活用し、アイデアをプロダクトへ変換する開発者の制作記録。4プロジェクト収録。" />
 
   <!-- OGP -->
   <meta property="og:type"        content="website" />
-  <meta property="og:title"       content="AI Dev Portfolio — Nishida" />
-  <meta property="og:description" content="AIツールを武器に、アイデアを素早くプロダクト化する開発者のポートフォリオ。" />
+  <meta property="og:title"       content="AI Dev Archive — Nishida" />
+  <meta property="og:description" content="AIツールで、アイデアをプロダクトに。4つの制作記録。" />
   <meta property="og:image"       content="image/project-openclaw.png" />
   <meta property="twitter:card"   content="summary_large_image" />
 
@@ -23,138 +22,196 @@
 </head>
 <body>
 
+  <!-- ===== Scroll Progress ===== -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
   <!-- ===== Nav ===== -->
-  <nav role="navigation" aria-label="メインナビゲーション">
+  <nav id="nav" role="navigation" aria-label="メインナビゲーション">
     <div class="nav-inner">
-      <a href="#hero" class="nav-logo">Portfolio</a>
-      <ul class="nav-links">
-        <li><a href="#projects">Projects</a></li>
+      <a href="#hero" class="nav-logo">
+        <span class="nav-logo-en">AI Dev</span>
+        <span class="nav-logo-sep"> — </span>
+        <span class="nav-logo-ja">開発記録</span>
+      </a>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#archive">制作物</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="navLinks">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
     </div>
   </nav>
 
   <!-- ===== Hero ===== -->
   <section id="hero" aria-label="ヒーロー">
     <div class="container">
-      <span class="hero-eyebrow reveal">AI Developer</span>
-      <h1 class="hero-title reveal" style="transition-delay:.08s">
-        AIで、アイデアを<br /><span class="en">into Products.</span>
-      </h1>
-      <p class="hero-desc reveal" style="transition-delay:.16s">
-        Claude Code / Manus などのAIツールを活用し、<br />
-        アイデアを素早く動くプロダクトへ変換します。
-      </p>
-      <a href="#projects" class="hero-cta reveal" style="transition-delay:.24s">作品を見る</a>
+      <div class="hero-inner">
+        <p class="hero-eyebrow reveal">2025 — 2026 &nbsp;·&nbsp; AI Developer</p>
+        <h1 class="hero-title reveal" style="transition-delay:.10s">
+          AIで、<br />
+          <em class="hero-title-ja">アイデアを</em><br />
+          <span class="hero-title-en">into Products.</span>
+        </h1>
+        <p class="hero-desc reveal" style="transition-delay:.20s">
+          Claude Code · Manus · ChatGPT を武器に、<br />
+          4つのプロダクトを制作した記録。
+        </p>
+        <a href="#archive" class="hero-cta reveal" style="transition-delay:.30s">記録を見る</a>
+      </div>
+
+      <div class="hero-index reveal" style="transition-delay:.45s" aria-hidden="true">
+        <span class="hi-item">01 · Tetris</span>
+        <span class="hi-sep"></span>
+        <span class="hi-item">02 · OpenClaw</span>
+        <span class="hi-sep"></span>
+        <span class="hi-item">03 · Flowtime</span>
+        <span class="hi-sep"></span>
+        <span class="hi-item">04 · Market</span>
+      </div>
     </div>
   </section>
 
-  <!-- ===== Projects ===== -->
-  <section id="projects" aria-label="制作物">
+  <!-- ===== Archive ===== -->
+  <section id="archive" aria-label="制作物アーカイブ">
     <div class="container">
+
       <div class="section-header reveal">
-        <p class="section-eyebrow">Projects</p>
-        <h2 class="section-title">制作物</h2>
+        <p class="section-eyebrow">Archive</p>
+        <h2 class="section-title">制作物 一覧</h2>
+        <p class="section-note">画像をクリックすると全画面で確認できます。</p>
       </div>
 
-      <div class="projects-grid">
+      <div class="year-divider reveal">
+        <span class="yd-line"></span>
+        <span class="yd-label">2025 — 2026</span>
+        <span class="yd-line"></span>
+      </div>
 
-        <!-- Tetris — orange × yellow -->
-        <article class="project-card reveal" data-season="tetris" style="transition-delay:.05s">
-          <div class="project-thumb-wrap">
+      <div class="archive-grid">
+
+        <!-- 01: Tetris -->
+        <article class="archive-card reveal" data-season="tetris" data-index="0" style="transition-delay:.06s">
+          <button class="card-media" aria-label="Tetris — Neon Minimalism Edition のスクリーンショットを拡大表示">
             <img
-              class="project-thumb"
               src="image/project-tetris.png"
-              alt="Tetris Neon Edition のスクリーンショット。ネオンカラーのブロックとスコア表示が見える。"
+              alt="Tetris Neon Edition のゲーム画面。ネオンカラーのブロックとスコア表示が見える。"
               width="600" height="375"
               loading="lazy"
             />
-          </div>
-          <div class="project-body">
-            <div class="project-tags" aria-label="使用技術">
-              <span class="tag">React</span>
-              <span class="tag">Canvas</span>
-              <span class="tag">Game</span>
+            <div class="card-overlay" aria-hidden="true">
+              <span class="card-overlay-icon">&#x2B1C;</span>
+              <span class="card-overlay-label">Full View</span>
             </div>
-            <h3 class="project-name">Tetris — Neon Minimalism Edition</h3>
-            <p class="project-desc">
-              React と Canvas API で制作したテトリスゲーム。
-              ネオンミニマリズムデザインでスコア・レベル管理を実装。
+            <span class="card-badge" aria-label="制作年: 2025">2025</span>
+          </button>
+          <div class="card-body">
+            <div class="card-num" aria-hidden="true">01</div>
+            <h3 class="card-name">Tetris — Neon Minimalism</h3>
+            <div class="card-tags" aria-label="使用技術・カテゴリ">
+              <span class="tag">React</span>
+              <span class="tag">Canvas API</span>
+              <span class="tag">Claude Code</span>
+            </div>
+            <p class="card-desc">
+              React と Canvas API で制作したブラウザゲーム。
+              ネオンミニマリズムデザインを採用し、スコア・レベル・ライン管理を実装。
+              AIとのペアプログラミングで一気に仕上げた。
             </p>
           </div>
         </article>
 
-        <!-- OpenClaw — navy × slate -->
-        <article class="project-card reveal" data-season="openclaw" style="transition-delay:.12s">
-          <div class="project-thumb-wrap">
+        <!-- 02: OpenClaw -->
+        <article class="archive-card reveal" data-season="openclaw" data-index="1" style="transition-delay:.13s">
+          <button class="card-media" aria-label="OpenClaw のスクリーンショットを拡大表示">
             <img
-              class="project-thumb"
               src="image/project-openclaw.png"
-              alt="OpenClaw の説明サイトのスクリーンショット。自律型AIエージェントの概要ページ。"
+              alt="OpenClaw 自律型AIエージェント総合説明サイトのヒーローセクション。"
               width="600" height="375"
               loading="lazy"
             />
-          </div>
-          <div class="project-body">
-            <div class="project-tags" aria-label="使用技術">
+            <div class="card-overlay" aria-hidden="true">
+              <span class="card-overlay-icon">&#x2B1C;</span>
+              <span class="card-overlay-label">Full View</span>
+            </div>
+            <span class="card-badge" aria-label="制作年: 2025">2025</span>
+          </button>
+          <div class="card-body">
+            <div class="card-num" aria-hidden="true">02</div>
+            <h3 class="card-name">OpenClaw — 自律型AIエージェント資料</h3>
+            <div class="card-tags" aria-label="使用技術・カテゴリ">
               <span class="tag">Manus</span>
               <span class="tag">AI Agent</span>
               <span class="tag">Web</span>
             </div>
-            <h3 class="project-name">OpenClaw — 自律型AIエージェント資料</h3>
-            <p class="project-desc">
-              Manus を使って制作した自律型AIエージェントの総合説明サイト。
+            <p class="card-desc">
+              Manus で制作した自律型AIエージェントの総合説明サイト。
               チャットから指示するだけでAIが代わりに動く仕組みを紹介。
+              プレゼン・営業資料としても活用できる構成。
             </p>
           </div>
         </article>
 
-        <!-- Flowtime — forest × gold -->
-        <article class="project-card mobile reveal" data-season="flowtime" style="transition-delay:.19s">
-          <div class="project-thumb-wrap">
+        <!-- 03: Flowtime -->
+        <article class="archive-card reveal mobile" data-season="flowtime" data-index="2" style="transition-delay:.20s">
+          <button class="card-media" aria-label="Flowtime Nature のスクリーンショットを拡大表示">
             <img
-              class="project-thumb"
               src="image/project-flowtime.png"
               alt="Flowtime Nature アプリのモバイル画面。タイマーと自然音の再生コントロールが表示されている。"
               width="390" height="693"
               loading="lazy"
             />
-          </div>
-          <div class="project-body">
-            <div class="project-tags" aria-label="使用技術">
+            <div class="card-overlay" aria-hidden="true">
+              <span class="card-overlay-icon">&#x2B1C;</span>
+              <span class="card-overlay-label">Full View</span>
+            </div>
+            <span class="card-badge" aria-label="制作年: 2025">2025</span>
+          </button>
+          <div class="card-body">
+            <div class="card-num" aria-hidden="true">03</div>
+            <h3 class="card-name">Flowtime Nature — 集中タイマー</h3>
+            <div class="card-tags" aria-label="使用技術・カテゴリ">
               <span class="tag">Mobile App</span>
               <span class="tag">Productivity</span>
+              <span class="tag">Claude Code</span>
             </div>
-            <h3 class="project-name">Flowtime Nature — 集中タイマー</h3>
-            <p class="project-desc">
+            <p class="card-desc">
               集中の波に合わせて休憩を提案するタイマーアプリ。
-              自然音再生機能付きで、作業時間の20%を自動で休憩時間に割り当て。
+              自然音再生機能付き。作業時間の20%を自動で休憩に割り当てる
+              Flowtime手法を採用。
             </p>
           </div>
         </article>
 
-        <!-- Market Connect — coral × beige -->
-        <article class="project-card reveal" data-season="market" style="transition-delay:.26s">
-          <div class="project-thumb-wrap">
+        <!-- 04: Market -->
+        <article class="archive-card reveal" data-season="market" data-index="3" style="transition-delay:.27s">
+          <button class="card-media" aria-label="マーケット・コネクトのスクリーンショットを拡大表示">
             <img
-              class="project-thumb"
               src="image/project-market.png"
               alt="マーケット・コネクトのランディングページ。次世代マーケットプレイスのヒーローセクション。"
               width="600" height="375"
               loading="lazy"
             />
-          </div>
-          <div class="project-body">
-            <div class="project-tags" aria-label="使用技術">
-              <span class="tag">LP</span>
-              <span class="tag">AI</span>
-              <span class="tag">Marketplace</span>
+            <div class="card-overlay" aria-hidden="true">
+              <span class="card-overlay-icon">&#x2B1C;</span>
+              <span class="card-overlay-label">Full View</span>
             </div>
-            <h3 class="project-name">マーケット・コネクト — AIマーケットプレイス</h3>
-            <p class="project-desc">
+            <span class="card-badge" aria-label="制作年: 2026">2026</span>
+          </button>
+          <div class="card-body">
+            <div class="card-num" aria-hidden="true">04</div>
+            <h3 class="card-name">マーケット・コネクト — AIマーケットプレイス</h3>
+            <div class="card-tags" aria-label="使用技術・カテゴリ">
+              <span class="tag">LP</span>
+              <span class="tag">AI Design</span>
+              <span class="tag">Manus</span>
+            </div>
+            <p class="card-desc">
               高度なデータ分析とAI技術を活用した次世代マーケットプレイスのLP。
-              サプライヤーとバイヤーをつなぐプラットフォームを紹介。
+              サプライヤーとバイヤーをつなぐプラットフォームのビジョンを視覚化。
             </p>
           </div>
         </article>
@@ -168,7 +225,7 @@
     <div class="container">
       <div class="section-header reveal">
         <p class="section-eyebrow">About</p>
-        <h2 class="section-title">について</h2>
+        <h2 class="section-title">開発者について</h2>
       </div>
 
       <div class="about-grid">
@@ -178,18 +235,19 @@
           </p>
           <p>
             Claude Code・Manus などの最新AIエージェントを活用し、
-            ゲーム・Webアプリ・モバイルアプリまで幅広く制作。
-            企画から実装・デプロイまでを一貫して担います。
+            ゲーム・Webアプリ・モバイルアプリ・LPまで幅広く制作。
+            企画から実装・デプロイまでを一人で一貫して担います。
           </p>
           <p>
-            「作りたい」を最速で「動くもの」に変えることをモットーにしています。
+            「作りたい」を最速で「動くもの」に変えること——
+            それがこの4つのプロジェクトを貫くテーマです。
           </p>
         </div>
 
-        <div class="skills-block reveal" style="transition-delay:.16s">
+        <div class="skills-wrap reveal" style="transition-delay:.16s">
           <div class="skills-group">
-            <p class="skills-group-label">AI Tools</p>
-            <ul class="skills-list">
+            <p class="skills-label">AI Tools</p>
+            <ul class="skills-list" role="list">
               <li>Claude Code</li>
               <li>Manus</li>
               <li>ChatGPT</li>
@@ -197,8 +255,8 @@
             </ul>
           </div>
           <div class="skills-group">
-            <p class="skills-group-label">Development</p>
-            <ul class="skills-list">
+            <p class="skills-label">Development</p>
+            <ul class="skills-list" role="list">
               <li>React</li>
               <li>HTML / CSS</li>
               <li>JavaScript</li>
@@ -229,23 +287,141 @@
   <!-- ===== Footer ===== -->
   <footer>
     <div class="container">
-      <p>&copy; 2026 Nishida. Built with Claude Code.</p>
+      <div class="footer-inner">
+        <p class="footer-brand">AI Dev Archive</p>
+        <p class="footer-copy">&copy; 2026 Nishida &ensp;·&ensp; Built with Claude Code</p>
+      </div>
     </div>
   </footer>
 
-  <!-- Scroll Reveal -->
+  <!-- ===== Lightbox ===== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="スクリーンショット拡大表示" hidden>
+    <div class="lb-bg" id="lbBg"></div>
+    <div class="lb-content">
+      <button class="lb-close" id="lbClose" aria-label="閉じる (Esc)">&times;</button>
+
+      <div class="lb-media">
+        <img class="lb-img" id="lbImg" src="" alt="" />
+      </div>
+
+      <div class="lb-footer">
+        <div class="lb-nav">
+          <button class="lb-btn lb-prev" id="lbPrev" aria-label="前の作品 (←)">
+            <span>&#8592;</span> <span class="lb-btn-label">前へ</span>
+          </button>
+          <p class="lb-caption" id="lbCaption"></p>
+          <button class="lb-btn lb-next" id="lbNext" aria-label="次の作品 (→)">
+            <span class="lb-btn-label">次へ</span> <span>&#8594;</span>
+          </button>
+        </div>
+        <p class="lb-hint">Esc で閉じる &ensp;·&ensp; ← → で切り替え</p>
+      </div>
+    </div>
+  </div>
+
   <script>
-    (function () {
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (e) {
-          if (e.isIntersecting) {
-            e.target.classList.add('visible');
-            io.unobserve(e.target);
-          }
-        });
-      }, { threshold: 0.1 });
-      document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
-    })();
+  (function () {
+    'use strict';
+
+    /* ── Scroll reveal ── */
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+
+    /* ── Scroll progress bar ── */
+    var bar = document.getElementById('scrollProgress');
+    window.addEventListener('scroll', function () {
+      var s = document.documentElement;
+      var pct = (s.scrollTop / (s.scrollHeight - s.clientHeight)) * 100;
+      bar.style.width = pct + '%';
+    }, { passive: true });
+
+    /* ── Nav: scroll tint ── */
+    var nav = document.getElementById('nav');
+    window.addEventListener('scroll', function () {
+      nav.classList.toggle('scrolled', window.scrollY > 48);
+    }, { passive: true });
+
+    /* ── Nav: mobile toggle ── */
+    var toggle = document.getElementById('navToggle');
+    var links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', function () {
+      var isOpen = links.classList.toggle('open');
+      toggle.classList.toggle('active', isOpen);
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+    links.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        links.classList.remove('open');
+        toggle.classList.remove('active');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    /* ── Lightbox ── */
+    var shots = [
+      { src: 'image/screenshot-tetris.png',  caption: '01 · Tetris — Neon Minimalism Edition' },
+      { src: 'image/screenshot-openclaw.png', caption: '02 · OpenClaw — 自律型AIエージェント資料' },
+      { src: 'image/screenshot-flowtime.png', caption: '03 · Flowtime Nature — 集中タイマー' },
+      { src: 'image/screenshot-market.png',   caption: '04 · マーケット・コネクト — AIマーケットプレイス' }
+    ];
+
+    var lb      = document.getElementById('lightbox');
+    var lbBg    = document.getElementById('lbBg');
+    var lbClose = document.getElementById('lbClose');
+    var lbImg   = document.getElementById('lbImg');
+    var lbCap   = document.getElementById('lbCaption');
+    var lbPrev  = document.getElementById('lbPrev');
+    var lbNext  = document.getElementById('lbNext');
+    var cur     = 0;
+
+    function render() {
+      lbImg.src        = shots[cur].src;
+      lbImg.alt        = shots[cur].caption;
+      lbCap.textContent= shots[cur].caption;
+      lbPrev.disabled  = cur === 0;
+      lbNext.disabled  = cur === shots.length - 1;
+    }
+
+    function open(idx) {
+      cur = idx;
+      render();
+      lb.hidden = false;
+      requestAnimationFrame(function () { lb.classList.add('open'); });
+      document.body.style.overflow = 'hidden';
+      lbClose.focus();
+    }
+
+    function close() {
+      lb.classList.remove('open');
+      lb.addEventListener('transitionend', function done() {
+        lb.hidden = true;
+        lb.removeEventListener('transitionend', done);
+      });
+      document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.card-media').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        open(parseInt(btn.closest('.archive-card').getAttribute('data-index'), 10));
+      });
+    });
+
+    lbClose.addEventListener('click', close);
+    lbBg.addEventListener('click', close);
+    lbPrev.addEventListener('click', function () { if (cur > 0) { cur--; render(); } });
+    lbNext.addEventListener('click', function () { if (cur < shots.length - 1) { cur++; render(); } });
+
+    document.addEventListener('keydown', function (e) {
+      if (lb.hidden) return;
+      if (e.key === 'Escape')                                     close();
+      if (e.key === 'ArrowLeft'  && cur > 0)                    { cur--; render(); }
+      if (e.key === 'ArrowRight' && cur < shots.length - 1)     { cur++; render(); }
+    });
+  }());
   </script>
 
 </body>
