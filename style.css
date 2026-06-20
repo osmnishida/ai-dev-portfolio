@@ -342,6 +342,21 @@ a {
   aspect-ratio: 21 / 9;
 }
 
+.work-card--portrait .work-card__media {
+  aspect-ratio: auto;
+  background: #0d0d14;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+.work-card--portrait .work-card__media img {
+  object-fit: contain;
+  max-height: 480px;
+  width: 100%;
+  height: auto;
+}
+
 .work-card__media {
   aspect-ratio: 16 / 9;
   overflow: hidden;
