@@ -3,148 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Dev Archive — AI開発記録</title>
-  <meta name="description" content="Osamu NISHIDA の AI 開発ポートフォリオ。2026 年に制作した4つのプロジェクト記録。">
-
+  <title>Osamu NISHIDA — AI Dev Portfolio</title>
+  <meta name="description" content="AI開発者・西田 理 のポートフォリオ。生成AI・自動化・Webアプリの制作実績。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600&family=Noto+Serif+JP:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ===== Navigation ===== -->
-  <nav class="site-nav">
+  <!-- ===== NAV ===== -->
+  <header class="site-nav">
     <div class="site-nav__inner">
-      <a href="#top" class="site-nav__logo">
-        <span class="site-nav__logo-en">AI Dev Archive</span>
-        <span class="site-nav__logo-ja">開発記録</span>
+      <a href="#home" class="site-nav__logo">
+        <span class="site-nav__logo-mark">ON</span>
+        <span class="site-nav__logo-text">Osamu NISHIDA</span>
       </a>
-      <ul class="site-nav__links" role="list">
-        <li><a href="#works">Works</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="mailto:inventivebox@gmail.com">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- ===== Hero ===== -->
-  <header class="hero" id="top">
-    <div class="hero__bg" aria-hidden="true"></div>
-    <div class="hero__veil" aria-hidden="true"></div>
-    <div class="hero__inner">
-      <p class="hero__eyebrow">
-        <span class="hero__eyebrow-en">Portfolio &mdash; 2026</span>
-        <span class="hero__eyebrow-ja">二〇二六年 制作記録</span>
-      </p>
-      <h1 class="hero__title">
-        <span class="hero__title-en">Osamu NISHIDA</span>
-        <span class="hero__title-ja">西田 修</span>
-      </h1>
-      <p class="hero__role">
-        <span class="hero__role-en">AI Developer &amp; Creator</span>
-        <span class="hero__role-ja">AI 開発者 &middot; 創作者</span>
-      </p>
-      <p class="hero__lede">
-        AI を相棒に、アイデアを静かに形へ。<br>
-        Crafting products with AI &mdash; one quiet iteration at a time.
-      </p>
-      <a href="#works" class="hero__cta">
-        <span>記録を見る</span>
-        <span class="hero__cta-en">View Archive</span>
-      </a>
+      <nav class="site-nav__links" aria-label="Primary">
+        <a href="#portfolio">Works</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <!-- ===== Portfolio ===== -->
-  <section class="portfolio-section" id="works">
-    <div class="portfolio-section__inner">
-      <div class="portfolio-section__head">
-        <p class="portfolio-section__eyebrow">Works &mdash; 作品</p>
-        <h2 class="portfolio-section__title">二〇二六年の制作記録</h2>
-        <p class="portfolio-section__note">An archive of four projects built in 2026.</p>
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <p class="hero__label">AI Developer &amp; Creator</p>
+        <h1 class="hero__title">
+          <span class="hero__title-line">Building</span>
+          <span class="hero__title-line hero__title-line--accent">AI-Powered</span>
+          <span class="hero__title-line">Experiences</span>
+        </h1>
+        <p class="hero__desc">AI開発者・西田 理 のポートフォリオ。<br>生成AI・自動化・Webアプリの制作実績。</p>
+        <div class="hero__cta">
+          <a href="#portfolio" class="btn btn--primary">View Works</a>
+          <a href="#about" class="btn btn--secondary">About Me</a>
+        </div>
       </div>
+    </section>
 
-      <div class="portfolio-grid">
+    <!-- ===== PORTFOLIO ===== -->
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio__inner">
+        <div class="portfolio__head">
+          <p class="section-label">Selected Works</p>
+          <h2 class="section-title">制作実績</h2>
+        </div>
+        <div class="portfolio__grid">
 
-        <article class="portfolio-card">
-          <span class="year-label">2026 &mdash; 一</span>
-          <figure class="portfolio-card__media">
-            <img src="image/スクリーンショット 2026-05-29 17.56.33.png" alt="AI チャットインターフェースのスクリーンショット" loading="lazy">
-          </figure>
-          <div class="portfolio-card__body">
-            <h3 class="portfolio-card__name">
-              <span class="portfolio-card__name-en">AI Chat Interface</span>
-              <span class="portfolio-card__name-ja">AI 対話インターフェース</span>
-            </h3>
-            <p class="portfolio-card__desc">対話を中心にした AI クライアントの試作。静かな余白と明朝体で、思考を妨げない読み心地を目指した。</p>
-          </div>
-        </article>
+          <article class="work-card work-card--violet">
+            <div class="work-card__media">
+              <img src="image/スクリーンショット 2026-05-29 17.56.33.png" alt="AI Chat Interface" loading="lazy">
+            </div>
+            <div class="work-card__body">
+              <span class="work-card__tag">AI / Chat</span>
+              <h3 class="work-card__title">AI Chat Interface</h3>
+              <p class="work-card__desc">Claude APIを活用したチャットUI。リアルタイムストリーミング対応。</p>
+            </div>
+          </article>
 
-        <article class="portfolio-card">
-          <span class="year-label">2026 &mdash; 二</span>
-          <figure class="portfolio-card__media">
-            <img src="image/スクリーンショット 2026-05-29 17.57.20.png" alt="画像生成ツールのスクリーンショット" loading="lazy">
-          </figure>
-          <div class="portfolio-card__body">
-            <h3 class="portfolio-card__name">
-              <span class="portfolio-card__name-en">Image Generation Tool</span>
-              <span class="portfolio-card__name-ja">画像生成ツール</span>
-            </h3>
-            <p class="portfolio-card__desc">プロンプトから絵を起こす制作補助ツール。fal API を背骨に、作家の手癖を保つテンプレート設計を試みた。</p>
-          </div>
-        </article>
+          <article class="work-card work-card--cyan">
+            <div class="work-card__media">
+              <img src="image/スクリーンショット 2026-05-29 17.57.20.png" alt="Image Generation Tool" loading="lazy">
+            </div>
+            <div class="work-card__body">
+              <span class="work-card__tag">AI / Image</span>
+              <h3 class="work-card__title">Image Generation Tool</h3>
+              <p class="work-card__desc">fal.aiを使った画像生成ツール。プロンプト最適化機能付き。</p>
+            </div>
+          </article>
 
-        <article class="portfolio-card">
-          <span class="year-label">2026 &mdash; 三</span>
-          <figure class="portfolio-card__media">
-            <img src="image/スクリーンショット 2026-05-29 17.58.02.png" alt="AI ダッシュボードのスクリーンショット" loading="lazy">
-          </figure>
-          <div class="portfolio-card__body">
-            <h3 class="portfolio-card__name">
-              <span class="portfolio-card__name-en">AI Dashboard</span>
-              <span class="portfolio-card__name-ja">AI ダッシュボード</span>
-            </h3>
-            <p class="portfolio-card__desc">複数モデルの稼働状況・コスト・応答品質を一望する管理画面。指標は最小限、間（ま）を残した編成。</p>
-          </div>
-        </article>
+          <article class="work-card work-card--emerald">
+            <div class="work-card__media">
+              <img src="image/スクリーンショット 2026-05-29 17.58.02.png" alt="AI Dashboard" loading="lazy">
+            </div>
+            <div class="work-card__body">
+              <span class="work-card__tag">AI / Dashboard</span>
+              <h3 class="work-card__title">AI Dashboard</h3>
+              <p class="work-card__desc">複数AIサービスを統合したダッシュボード。使用量・コスト可視化。</p>
+            </div>
+          </article>
 
-        <article class="portfolio-card">
-          <span class="year-label">2026 &mdash; 四</span>
-          <figure class="portfolio-card__media">
-            <img src="image/スクリーンショット 2026-05-29 17.58.44.png" alt="自動化ワークフローのスクリーンショット" loading="lazy">
-          </figure>
-          <div class="portfolio-card__body">
-            <h3 class="portfolio-card__name">
-              <span class="portfolio-card__name-en">Automation Workflow</span>
-              <span class="portfolio-card__name-ja">自動化ワークフロー</span>
-            </h3>
-            <p class="portfolio-card__desc">AI エージェントの連携を可視化するワークフロー基盤。手仕事のように、節を一つずつ確かめながら組む。</p>
-          </div>
-        </article>
+          <article class="work-card work-card--amber">
+            <div class="work-card__media">
+              <img src="image/スクリーンショット 2026-05-29 17.58.44.png" alt="Automation Workflow" loading="lazy">
+            </div>
+            <div class="work-card__body">
+              <span class="work-card__tag">AI / Automation</span>
+              <h3 class="work-card__title">Automation Workflow</h3>
+              <p class="work-card__desc">AIエージェントによる自動化ワークフロー。業務効率化ツール。</p>
+            </div>
+          </article>
 
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== About ===== -->
-  <section class="about-section" id="about">
-    <div class="about-section__inner">
-      <p class="about-section__eyebrow">About &mdash; 制作者</p>
-      <h2 class="about-section__title">静かに、毎年つくる。</h2>
-      <p class="about-section__text">
-        Claude Code・Manus・ChatGPT を相棒に、アイデアを最短距離でプロダクトに変える AI 開発者。<br>
-        年に一度、その年の手仕事をここに残しています。
-      </p>
-    </div>
-  </section>
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about">
+      <div class="about__inner">
+        <div class="about__content">
+          <p class="section-label">About</p>
+          <h2 class="section-title">西田 理 / Osamu NISHIDA</h2>
+          <p class="about__text">生成AIを活用したWebアプリ・ツール・自動化システムの開発者。<br>Claude / GPT / fal.ai など最新AIサービスを組み合わせ、実用的なプロダクトを制作しています。</p>
+          <div class="about__skills">
+            <span class="skill-tag">Claude API</span>
+            <span class="skill-tag">fal.ai</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">AI Agents</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- ===== Footer ===== -->
-  <footer class="site-footer">
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" id="contact">
     <div class="site-footer__inner">
-      <p class="site-footer__brand">AI Dev Archive</p>
-      <p class="site-footer__copy">&copy; 2026 Osamu NISHIDA</p>
+      <p class="site-footer__brand">Osamu NISHIDA</p>
+      <p class="site-footer__copy">&copy; 2026 Osamu NISHIDA. All rights reserved.</p>
     </div>
   </footer>
 
