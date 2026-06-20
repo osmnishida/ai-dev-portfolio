@@ -335,12 +335,6 @@ a {
   box-shadow: 0 16px 48px rgba(255, 179, 71, 0.12);
 }
 
-.work-card--wide {
-  grid-column: 1 / -1;
-}
-.work-card--wide .work-card__media {
-  aspect-ratio: 21 / 9;
-}
 
 .work-card--portrait .work-card__media {
   aspect-ratio: auto;
